@@ -48,10 +48,10 @@
         <p>Descripción de la opción 5.</p>
       </div></a>
 
-      <a class ="content_card" href="">
+      <a class ="content_card" href="problemas/problema6.php">
       <div class="card">
-        <h2>Opción 6</h2>
-        <p>Descripción de la opción 6.</p>
+        <h2>Problema 6</h2>
+        <p>Tabla de distribución de presupuesto de un Hospital</p>
       </div></a>
 
       <a class = "content_card" href="">
