@@ -20,7 +20,7 @@
 <body>
   <header>
     <div class="nav">
-      <a href="problema1.php?accion=miFuncion">
+      <a href="problema2.php?accion=miFuncion">
         <img src="../img/arrow.png">
       </a>
       <h2 class="titulo">Suma de los 10 primeros números pares</h2>
@@ -46,6 +46,7 @@
       ?>
     </div>
   </div>
+  <br><br><br><br><br><br><br><br><br><br><br><br>
   <footer>
     <?php
     $año = date("Y"); // Obtiene el año actual

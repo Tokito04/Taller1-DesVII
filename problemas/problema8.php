@@ -1,6 +1,5 @@
 <?php
 
-use function PHPSTORM_META\elementType;
 
   function menuPrincipal($url){
     header("Location: $url");   // Redirige a la página principal
@@ -15,7 +14,7 @@ use function PHPSTORM_META\elementType;
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Consultor de estaciones</title>
     <link rel="stylesheet" href="../styles/estilos.css">
 </head>
 <body>
@@ -29,9 +28,11 @@ use function PHPSTORM_META\elementType;
     </header>
     <div class="content">
         <form method="post" class="formulario">
-            Día: <input type="number" name="dia" min="1" max="31" required><br><br>
-            Mes: <input type="number" name="mes" min="1" max="12" required><br><br>
-            <input type="submit" value="Consultar estación">
+            <label>Día: </label>
+            <input type="number" name="dia" min="1" max="31" required><br><br>
+            <label>Mes:</label>
+            <input type="number" name="mes" min="1" max="12" required><br><br>
+            <button type="submit">Consultar Estación</button>
         </form>
         <?php
         // Clase para manejar la lógica de estación
@@ -45,7 +46,8 @@ use function PHPSTORM_META\elementType;
             }
 
             public function esFechaValida() {
-                return checkdate($this->mes, $this->dia, 2025);
+                return checkdate($this->mes, $this->dia, date("Y"));
+            // checkdate verifica si la fecha es válida para el mes y el día dados.
             }
             public function obtenerEstacion() {
                 if (($this->mes == 12 && $this->dia >= 21) || $this->mes == 1 || $this->mes == 2 || ($this->mes == 3 && $this->dia < 21)) {

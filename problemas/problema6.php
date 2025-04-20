@@ -13,7 +13,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Problema 2</title>
+    <title>Presupuesto Hospital</title>
     <link rel="stylesheet" href="../styles/estilos.css">
 </head>
 <body style="background-size:108%">
@@ -45,6 +45,7 @@
             </tr>
         </table>
     </div>
+    <br><br><br><br><br><br><br><br><br>
     <footer>
         <?php
             $año = date("Y");

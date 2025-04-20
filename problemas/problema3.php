@@ -19,7 +19,7 @@
 <body>
   <header>
     <div class="nav">
-      <a href="problema1.php?accion=miFuncion">
+      <a href="problema3.php?accion=miFuncion">
         <img src="../img/arrow.png">
       </a>
       <h2 class="titulo">Suma de los 10 primeros números pares</h2>

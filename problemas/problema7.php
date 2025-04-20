@@ -15,7 +15,7 @@ use function PHPSTORM_META\elementType;
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Problema 7</title>
+    <title>Calculadora de Datos Estadisticos</title>
     <link rel="stylesheet" href="../styles/estilos.css">
 </head>
 <body>
@@ -32,9 +32,8 @@ use function PHPSTORM_META\elementType;
             <label for="cantidad">¿Cuántas notas deseas ingresar?</label>
             <input type="number" name="cantidad" id="cantidad" required min="2">
             <br><br>
-            <input type="submit" name="btnGenerar" value="Generar formulario para notas">
+            <button type = "submit">Generar formulario para notas</button>
         </form>
-
         <?php
             // verificación de que cantidad tenga un valor
             if($_SERVER['REQUEST_METHOD']=='POST' && isset($_POST['cantidad'])){
@@ -46,9 +45,9 @@ use function PHPSTORM_META\elementType;
 
                 for ($i = 1; $i <= $cantidad; $i++){
                     echo "<label for='nota$i'>Nota Número $i: </label>" .
-                    "<input type='number' name='nota$i' required/> <br><br>";
+                    "<input type='number' name='nota$i' required min='1'/> <br><br>";
                 }
-                echo '<input type="submit" name="btnCalcular" value="Calcular">';
+                echo '<button type="submit" name="btnCalcular">Calcular</button>';
                 echo '</form>';
 
                 if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST["btnCalcular"])){

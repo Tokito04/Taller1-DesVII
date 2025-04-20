@@ -1,6 +1,5 @@
 <?php
 
-use function PHPSTORM_META\elementType;
 
   function menuPrincipal($url){
     header("Location: $url");  // Redirige a la página principal
@@ -15,7 +14,7 @@ use function PHPSTORM_META\elementType;
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Problema 9</title>
+    <title>Potencias de 4</title>
     <link rel="stylesheet" href="../styles/estilos.css">
 </head>
 <body>
@@ -28,12 +27,13 @@ use function PHPSTORM_META\elementType;
         </div>
     </header>
     <div class="content" style="padding-left:50px">
-        <?php
-            $potencia = new Problema9();
-            for($i=1;$i<=15;$i++){
-                echo '<p> 4 elevado a '.$i.' es igual a '.$potencia->potencia($i).'</p>';
-            }
-        ?>
+        <div class="respuesta">
+            <?php
+                $potencia = new Problema9();
+                for($i=1;$i<=15;$i++){
+                    echo '<h3> 4 elevado a '.$i.' es igual a '.$potencia->potencia($i).'</h3>';
+                }
+            ?></div>
     </div>
     <?php
         // Clase para manejar la lógica
