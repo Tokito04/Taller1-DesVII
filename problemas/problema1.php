@@ -1,8 +1,9 @@
 <?php
   function menuPrincipal($url){
-    header("Location: $url");  // Redirige a 
+    header("Location: $url");  // Redirige a la página principal
       exit();
   }
+    // Verifica si se ha enviado una acción por método GET y si es igual a 'miFuncion'
   if (isset($_GET['accion']) && $_GET['accion'] == 'miFuncion') {
     menuPrincipal("../index.php");
   }
@@ -47,16 +48,18 @@
     </form>
     <div class="respuesta">
       <?php
+        // Función que calcula la media (promedio) de los elementos de un arreglo
         function CalcularMedia($array){
           $total = 0;
           foreach ($array as $valor){
-            $total += $valor; 
+            $total += $valor; #Suma de todos los valores del arreglo
           }
           $media = $total/5;
-          return $media;
+          return $media;#Devuelve la media calculada
         }
-        $valido = true;
+        $valido = true;#Variable para validar si todos los valores ingresados son permitidos
         if($_SERVER["REQUEST_METHOD"] == "POST"){
+          #Guarda los datos ingresados por el usuario en una variable
           $arreglo = array(
             $_POST['num_1'],
             $_POST['num_2'],
@@ -64,16 +67,19 @@
             $_POST['num_4'],
             $_POST['num_5']
           );
+          #Se recorre el arreglo para verificar la validez de los datos
           foreach ($arreglo as $valor){
             if(!is_numeric($valor) || $valor < 0){
               $valido = false;
               break;
             }
           }
+          #Si los valores son válidos se imprime el resultado
           if($valido){
             $resultado = CalcularMedia($arreglo);
             echo "<h3>La media de los números ingresados es: $resultado </h3>";
           }else{
+            #Muestra un mensaje de error si alguno de los valores es inválido
             echo "<h3>Ha ingresado un valor no válido. Intente nuevamente</h3>";
           }
         }

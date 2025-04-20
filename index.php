@@ -24,28 +24,28 @@
         <p>Calculadora de la media de 5 números.</p>
       </div></a>
 
-      <a href="" class="content_card">
+      <a href="problemas/problema2.php" class="content_card">
       <div class="card">
-        <h2>Opción 2</h2>
-        <p>Descripción de la opción 2.</p>
+        <h2>Problema 2</h2>
+        <p>Sumatoria de números del 1 al 1000</p>
       </div></a>
 
-      <a class ="content_card" href="">
+      <a class ="content_card" href="problemas/problema3.php">
       <div class="card">
-        <h2>Opción 3</h2>
-        <p>Descripción de la opción 3.</p>
+        <h2>Problema 3</h2>
+        <p>Suma de primeros 10 números pares.</p>
       </div></a>
 
-      <a class = "content_card" href="">
+      <a class = "content_card" href="problemas/problema4.php">
         <div class="card">
-          <h2>Opción 4</h2>
-          <p>Descripción de la opción 4.</p>
+          <h2>Problema 4</h2>
+          <p>Suma independiente de números pares e impares.</p>
         </div></a>
 
-        <a href="" class="content_card">
+        <a href="problemas/problema5.php" class="content_card">
       <div class="card">
-        <h2>Opción 5</h2>
-        <p>Descripción de la opción 5.</p>
+        <h2>Problema 5</h2>
+        <p>Categorizador de sujetos según la edad.</p>
       </div></a>
 
       <a class ="content_card" href="">
