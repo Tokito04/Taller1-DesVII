@@ -54,28 +54,28 @@
         <p>Tabla de distribución de presupuesto de un Hospital</p>
       </div></a>
 
-      <a class = "content_card" href="">
+      <a class = "content_card" href="problemas/problema7.php">
         <div class="card">
-          <h2>Opción 7</h2>
-          <p>Descripción de la opción 7.</p>
+          <h2>Problema 7</h2>
+          <p>Calcular el promedio, desviación, nota mínima y nota máxima</p>
         </div></a>
 
-        <a href="" class="content_card">
+        <a href="problemas/problema8.php" class="content_card">
       <div class="card">
-        <h2>Opción 8</h2>
-        <p>Descripción de la opción 8.</p>
+        <h2>Problema 8</h2>
+        <p>¡Con el día y el mes te decimos en qué estación del año estás!</p>
       </div></a>
 
-      <a class ="content_card" href="">
+      <a class ="content_card" href="problemas/problema9.php">
       <div class="card">
-        <h2>Opción 9</h2>
-        <p>Descripción de la opción 9.</p>
+        <h2>Problema 9</h2>
+        <p>Te listamos las primeras 15 potenciaciones de 4</p>
       </div></a>
 
-      <a class = "content_card" href="">
+      <a class = "content_card" href="problemas/problema10.php">
         <div class="card">
-          <h2>Opción 10</h2>
-          <p>Descripción de la opción 10.</p>
+          <h2>Problema 10</h2>
+          <p>¡Los primeros múltiplos de 4 que necesites conocer!</p>
         </div></a>
     </div>
   </div>

@@ -1,4 +1,7 @@
 <?php
+
+use function PHPSTORM_META\elementType;
+
   function menuPrincipal($url){
     header("Location: $url");  // Redirige a 
       exit();
@@ -7,44 +10,38 @@
     menuPrincipal("../index.php");
   }
 ?>
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Problema 2</title>
+    <title>Problema 9</title>
     <link rel="stylesheet" href="../styles/estilos.css">
 </head>
-<body style="background-size:108%">
+<body>
     <header>
         <div class="nav">
-            <a href="problema6.php?accion=miFuncion">
+            <a href="problema9.php?accion=miFuncion">
                 <img src="../img/arrow.png">
             </a>
-            <h2 class="titulo">Distribución de presupuesto</h2>
+            <h2 class="titulo">Las primeras 15 potencias de 4 :)</h2>
         </div>
-  </header>
-    <div class="content" style="padding: 50px;">
-        <table class="tabla" style="font-size: x-large;">
-            <tr style="background-color: purple; color:antiquewhite;">
-                <th><b>Área</b></th>
-                <th><b>Porcentaje del Presupuesto</b></th>
-            </tr>
-            <tr>
-                <td>Ginecología</td>
-                <td>40%</td>
-            </tr>
-            <tr>
-                <td>Traumatología</td>
-                <td>35%</td>
-            </tr>
-            <tr>
-                <td>Pediatría</td>
-                <td>25%</td>
-            </tr>
-        </table>
+    </header>
+    <div class="content" style="padding-left:50px">
+        <?php
+            $potencia = new Problema9();
+            for($i=1;$i<=15;$i++){
+                echo '<p> 4 elevado a '.$i.' es igual a '.$potencia->potencia($i).'</p>';
+            }
+        ?>
     </div>
+    <?php
+        class Problema9{
+            public function potencia($num) {
+                return (4**$num);
+            }
+        }        
+    ?>
     <footer>
         <?php
             $año = date("Y");

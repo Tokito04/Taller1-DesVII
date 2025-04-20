@@ -152,7 +152,7 @@ footer span {
     color: #ffffff;
 }
 
-table, th, td {
+.tabla, th, td {
   border-collapse:collapse;
   border: 2px solid black;
   margin: auto;
@@ -160,6 +160,16 @@ table, th, td {
   align-content: center;
   text-align: center;
   padding: 5px 20px;
+}
+
+.resultado {
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #e0f2f1;
+  border: 1px solid #80cbc4;
+  color: #00695c;
+  font-weight: bold;
 }
 
 
