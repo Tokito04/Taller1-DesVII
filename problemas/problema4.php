@@ -20,7 +20,7 @@
 <body>
   <header>
     <div class="nav">
-      <a href="problema1.php?accion=miFuncion">
+      <a href="problema4.php?accion=miFuncion">
         <img src="../img/arrow.png">
       </a>
       <h2 class="titulo">Suma independientes de números pares e impares</h2>

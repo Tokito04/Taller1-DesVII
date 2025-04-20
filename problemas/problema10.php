@@ -1,7 +1,4 @@
 <?php
-
-use function PHPSTORM_META\elementType;
-
   function menuPrincipal($url){
     header("Location: $url");  // Redirige a la página principal
       exit();
@@ -15,36 +12,37 @@ use function PHPSTORM_META\elementType;
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Problema 10</title>
+    <title>Múltiplos de 4</title>
     <link rel="stylesheet" href="../styles/estilos.css">
 </head>
 <body>
     <header>
         <div class="nav">
-            <a href="problema9.php?accion=miFuncion">
+            <a href="problema10.php?accion=miFuncion">
                 <img src="../img/arrow.png">
             </a>
             <h2 class="titulo">Los primeros múltiplos de 4 :D</h2>
         </div>
     </header>
-    <div class="content" style="padding-left:50px">
+    <div class="content">
         <form action="" class="formulario" method="POST">
             <label for="numeros">¿Cuantos múltiplos desea conocer?</label>
             <input type="number" name="numeros" id="numeros">
-            <input type="submit" value="Calcular">
+            <button type="submit">Enviar</button>
         </form>
-        <?php
+        <div class="respuesta">
+            <?php
 
-            if($_SERVER['REQUEST_METHOD']=='POST' && isset($_POST['numeros'])){
-                $numeros = $_REQUEST['numeros'];
-                $multiplo = new Problema10();
-                echo '<div style="font-weight:bold; text-align:center;">';
-                    for($i=1;$i<=$numeros;$i++){
-                        echo '<p> 4 X '.$i.' es igual a '.$multiplo->multiplicacion($i).'</p>';
-                    }
-                echo '</div>';
-            }
-        ?>
+                if($_SERVER['REQUEST_METHOD']=='POST' && isset($_POST['numeros'])){
+                    $numeros = $_REQUEST['numeros'];
+                    $multiplo = new Problema10();
+                    echo '<div style="font-weight:bold; text-align:center;">';
+                        for($i=1;$i<=$numeros;$i++){
+                            echo '<p> 4 X '.$i.' es igual a '.$multiplo->multiplicacion($i).'</p>';
+                        }
+                    echo '</div>';
+                }
+            ?></div>
     </div>
     <?php
         //Clase para manejar la Lógica
