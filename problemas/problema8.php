@@ -3,7 +3,7 @@
 use function PHPSTORM_META\elementType;
 
   function menuPrincipal($url){
-    header("Location: $url");
+    header("Location: $url");   // Redirige a la página principal
       exit();
   }
   if (isset($_GET['accion']) && $_GET['accion'] == 'miFuncion') {
@@ -47,7 +47,6 @@ use function PHPSTORM_META\elementType;
             public function esFechaValida() {
                 return checkdate($this->mes, $this->dia, 2025);
             }
-
             public function obtenerEstacion() {
                 if (($this->mes == 12 && $this->dia >= 21) || $this->mes == 1 || $this->mes == 2 || ($this->mes == 3 && $this->dia < 21)) {
                     return "Invierno";
@@ -67,6 +66,7 @@ use function PHPSTORM_META\elementType;
             $mes = $_POST["mes"];
 
             $estacion = new Estacion($dia, $mes);
+            //Div con estilo porque al generarlo no se linkea al css 
             echo'<div style="
                     margin-top: 20px;
                     padding: 15px;

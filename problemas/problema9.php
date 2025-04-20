@@ -3,7 +3,7 @@
 use function PHPSTORM_META\elementType;
 
   function menuPrincipal($url){
-    header("Location: $url");  // Redirige a 
+    header("Location: $url");  // Redirige a la página principal
       exit();
   }
   if (isset($_GET['accion']) && $_GET['accion'] == 'miFuncion') {
@@ -36,6 +36,7 @@ use function PHPSTORM_META\elementType;
         ?>
     </div>
     <?php
+        // Clase para manejar la lógica
         class Problema9{
             public function potencia($num) {
                 return (4**$num);

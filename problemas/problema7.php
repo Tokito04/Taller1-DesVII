@@ -3,7 +3,7 @@
 use function PHPSTORM_META\elementType;
 
   function menuPrincipal($url){
-    header("Location: $url");  // Redirige a 
+    header("Location: $url");  // Redirige a la página principal
       exit();
   }
   if (isset($_GET['accion']) && $_GET['accion'] == 'miFuncion') {
@@ -36,7 +36,7 @@ use function PHPSTORM_META\elementType;
         </form>
 
         <?php
-            
+            // verificación de que cantidad tenga un valor
             if($_SERVER['REQUEST_METHOD']=='POST' && isset($_POST['cantidad'])){
                 $cantidad = $_POST['cantidad'];
 
@@ -53,6 +53,7 @@ use function PHPSTORM_META\elementType;
 
                 if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST["btnCalcular"])){
                     $objeto = new Procesos($cantidad);
+                    //Div con estilo porque al generarlo no se linkea al css 
                     echo '<div class="resultado" style="margin-top: 20px;
                         padding: 15px;
                         border-radius: 10px;
@@ -65,6 +66,7 @@ use function PHPSTORM_META\elementType;
                     echo '</div>';
                 }
             }
+            //clase para el paradigma POO
             class Procesos{
                 private $arreglo;
                 private $cantidad;
