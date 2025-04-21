@@ -26,25 +26,25 @@
         </div>
   </header>
     <div class="content" style="padding: 50px;">
-        <table class="tabla" style="font-size: x-large;">
-            <tr style="background-color: purple; color:antiquewhite;">
-                <th><b>Área</b></th>
-                <th><b>Porcentaje del Presupuesto</b></th>
-            </tr>
-            <tr>
-                <td>Ginecología</td>
-                <td>40%</td>
-            </tr>
-            <tr>
-                <td>Traumatología</td>
-                <td>35%</td>
-            </tr>
-            <tr>
-                <td>Pediatría</td>
-                <td>25%</td>
-            </tr>
-        </table>
+        <form action="" method="POST" class="formulario">
+            <label>Presupuesto Anual</label>
+            <input type="number" name="presupuesto">
+            <button type="submit">Calcular</button>
+        </form>
+        <?php
+            //Validación del campo de presupuesto
+            if($_SERVER['REQUEST_METHOD']=='POST' && isset($_POST['presupuesto'])){
+                $presupuesto = $_POST['presupuesto'];
+                echo '<div class="respuesta">';
+                echo '<h3>El presupuesto para el departamento de Ginecología es de: '.round($presupuesto*0.4,2).'</h3>';
+                echo '<h3>El presupuesto para el departamento de Traumatología es de: '.round($presupuesto*0.35,2).'</h3>';
+                echo '<h3>El presupuesto para el departamento de Pediatría es de: '.round($presupuesto*0.25,2).'</h3>';
+                echo '</div>';
+            }
+        ?>
+        
     </div>
+    
     <br><br><br><br><br><br><br><br><br>
     <footer>
         <?php
