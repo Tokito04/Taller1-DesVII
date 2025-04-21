@@ -30,19 +30,19 @@
             <input type="number" name="numeros" id="numeros">
             <button type="submit">Enviar</button>
         </form>
-        <div class="respuesta">
-            <?php
+        
+        <?php
 
-                if($_SERVER['REQUEST_METHOD']=='POST' && isset($_POST['numeros'])){
-                    $numeros = $_REQUEST['numeros'];
-                    $multiplo = new Problema10();
-                    echo '<div style="font-weight:bold; text-align:center;">';
-                        for($i=1;$i<=$numeros;$i++){
-                            echo '<p> 4 X '.$i.' es igual a '.$multiplo->multiplicacion($i).'</p>';
-                        }
-                    echo '</div>';
-                }
-            ?></div>
+            if($_SERVER['REQUEST_METHOD']=='POST' && isset($_POST['numeros'])){
+                $numeros = $_REQUEST['numeros'];
+                $multiplo = new Problema10();
+                echo '<div class="respuesta">';
+                    for($i=1;$i<=$numeros;$i++){
+                        echo '<p> 4 X '.$i.' es igual a '.$multiplo->multiplicacion($i).'</p>';
+                    }
+                echo '</div>';
+            }
+        ?>
     </div>
     <?php
         //Clase para manejar la Lógica
