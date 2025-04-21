@@ -14,7 +14,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Suma de números pares</title>
+    <title>Suma de números</title>
     <link rel="stylesheet" href="../styles/estilos.css">
 </head>
 <body>
@@ -23,7 +23,7 @@
       <a href="problema2.php?accion=miFuncion">
         <img src="../img/arrow.png">
       </a>
-      <h2 class="titulo">Suma de los 10 primeros números pares</h2>
+      <h2 class="titulo">Suma de los 1000 primeros números</h2>
     </div>
   </header>
 
