@@ -3,10 +3,11 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   background-color: #f4f4f4;
-  background-image: url("../img/wallpaper1.jpg");
+  background-image: url("../img/wallpaper2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 
 header {
@@ -36,7 +37,7 @@ a img {
   cursor: pointer;
 }
 a img:hover{
-  background-color: #575757;
+  background-color: #23dfe67b;
   border-radius: 5px;
 }
 .nav {

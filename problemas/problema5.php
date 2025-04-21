@@ -30,19 +30,19 @@
   <div class="content">
     <form class="formulario" action="#" method="post">
       <label for="nombre">Primer Sujeto</label>
-      <input type="number" id="num_1" name="num_1" required>
+      <input type="number" id="num_1" name="num_1" required max="135">
 
       <label for="apellido">Segundo Sujeto</label>
-      <input type="number" id="num_2" name="num_2" required>
+      <input type="number" id="num_2" name="num_2" required max="135">
 
       <label for="correo">Tercer Sujeto</label>
-      <input type="number" id="num_3" name="num_3" required>
+      <input type="number" id="num_3" name="num_3" required max="135">
 
       <label for="telefono">Cuarto Sujeto</label>
-      <input type="number" id="num_4" name="num_4" required>
+      <input type="number" id="num_4" name="num_4" required max="135">
 
       <label for="mensaje">Quinto Sujeto</label>
-      <input type="number" id="num_5" name="num_5" required>
+      <input type="number" id="num_5" name="num_5" required max="135">
 
       <button type="submit">Categorizar</button>
     </form>

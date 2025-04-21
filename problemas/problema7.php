@@ -1,7 +1,5 @@
 <?php
 
-use function PHPSTORM_META\elementType;
-
   function menuPrincipal($url){
     header("Location: $url");  // Redirige a la página principal
       exit();
@@ -11,7 +9,7 @@ use function PHPSTORM_META\elementType;
   }
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -91,7 +89,7 @@ use function PHPSTORM_META\elementType;
                 }
 
                 public function Desviacion(){
-                    $media = $this->CalcularPromedio();
+                    $media = $this->CalcularPromedio()/$this->cantidad;
 
                     $diferenciasCuadrado = 0;
                     foreach($this->arreglo as $notas){

@@ -33,9 +33,9 @@
         </form>
         <?php
             function RepartirPresupuesto($presupuesto){
-                $ginecologia = number_format(round($presupuesto * 0.4, 2), 2, '.', '');
-                $traumatologia = number_format(round($presupuesto * 0.35, 2), 2, '.', '');
-                $pediatria = number_format(round($presupuesto * 0.25, 2), 2, '.', '');
+                $ginecologia = number_format(round($presupuesto * 0.4, 2), 2, '.', ',');
+                $traumatologia = number_format(round($presupuesto * 0.35, 2), 2, '.', ',');
+                $pediatria = number_format(round($presupuesto * 0.25, 2), 2, '.', ',');
                 return array("ginecología"=>$ginecologia, "traumatología"=>$traumatologia, "pediatría"=>$pediatria);
             }
             //Validación del campo de presupuesto
