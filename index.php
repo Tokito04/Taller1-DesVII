@@ -27,7 +27,7 @@
       <a href="problemas/problema2.php" class="content_card">
       <div class="card">
         <h2>Problema 2</h2>
-        <p>Sumatoria de números del 1 al 100</p>
+        <p>Sumatoria de números del 1 al 1000</p>
       </div></a>
 
       <a class ="content_card" href="problemas/problema3.php">

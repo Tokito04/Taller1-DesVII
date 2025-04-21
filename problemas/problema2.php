@@ -30,18 +30,15 @@
   <div class="content">
     <div class="respuesta">
       <?php
-        function CalcularSuma($array){
+        function CalcularSuma(){
           $total = 0;
-          foreach ($array as $valor){
-            $total += $valor; 
+          for ($i = 1; $i <= 1000; $i++) {
+            $total += $i; // Acumula los números hasta 1000
           }
           return $total; // Devuelve la suma total
         }
-        $arreglo_num = [];
-        for ($i = 1; $i <= 10; $i++) {
-          $arreglo_num[] = $i * 2; // Almacena los números pares hasta 20
-        }
-        $resultado = CalcularSuma($arreglo_num); // Llama la función para calcular la suma
+        
+        $resultado = CalcularSuma(); // Llama la función para calcular la suma
         echo "<h3>La suma de los números es: $resultado </h3>"; // Muestra el resultado
       ?>
     </div>
