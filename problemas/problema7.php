@@ -91,7 +91,7 @@ use function PHPSTORM_META\elementType;
                 }
 
                 public function Desviacion(){
-                    $media = $this->CalcularPromedio()/$this->cantidad;
+                    $media = $this->CalcularPromedio();
 
                     $diferenciasCuadrado = 0;
                     foreach($this->arreglo as $notas){

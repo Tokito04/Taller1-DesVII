@@ -27,7 +27,7 @@
     <div class="content">
         <form action="" class="formulario" method="POST">
             <label for="numeros">¿Cuantos múltiplos desea conocer?</label>
-            <input type="number" name="numeros" id="numeros">
+            <input type="number" name="numeros" id="numeros" min="1" required>
             <button type="submit">Enviar</button>
         </form>
         
@@ -38,7 +38,7 @@
                 $multiplo = new Problema10();
                 echo '<div class="respuesta">';
                     for($i=1;$i<=$numeros;$i++){
-                        echo '<p> 4 X '.$i.' es igual a '.$multiplo->multiplicacion($i).'</p>';
+                        echo '<h3> 4 × '.$i.' es igual a '.$multiplo->multiplicacion($i).'</h3>';
                     }
                 echo '</div>';
             }
@@ -48,7 +48,7 @@
         //Clase para manejar la Lógica
         class Problema10{
             public function multiplicacion($num) {
-                return (4*$num);
+                return (number_format(4*$num, 0, '.', ','));
             }
         }        
     ?>

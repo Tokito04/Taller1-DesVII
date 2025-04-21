@@ -23,7 +23,7 @@
             <a href="problema9.php?accion=miFuncion">
                 <img src="../img/arrow.png">
             </a>
-            <h2 class="titulo">Las primeras 15 potencias de 4 :)</h2>
+            <h2 class="titulo">Las primeras 15 potencias de 4 :D</h2>
         </div>
     </header>
     <div class="content" style="padding-left:50px">
@@ -39,7 +39,7 @@
         // Clase para manejar la lógica
         class Problema9{
             public function potencia($num) {
-                return (4**$num);
+                return (number_format(4**$num, 0, '.', ','));
             }
         }        
     ?>
